@@ -1,0 +1,93 @@
+/* regole generali */
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+/* parte superiore */
+header{ 
+    height: 70px;
+    background-color: rgba(0,0,0,0.8); 
+    position: fixed;
+    width:calc(100% - 200px);
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    
+    
+    
+}
+.button{ 
+    color: white;
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 10px;
+    background-color: #080b12;
+    border-color: #c2c3c5;
+    width: 15%;
+
+    
+}
+.upper{ 
+    height: calc(100vh - 80px);
+    display: flex;
+    
+}
+/* side */
+.spotify{ 
+    color: white;
+}
+.side{ 
+    width:200px;
+    height: 100%;
+    background-color:#000000 ;
+    color:#a3a3a3;
+    
+   
+}
+#logo{ 
+    width: 60%;
+}
+/* specifiche icone side */
+i{ 
+    color: white;
+    margin: 10px;
+}
+.fa-square-plus{ 
+    color: #a3a3a3;
+    font-size: 2rem;
+}
+strong{ 
+    margin: 10px;
+}
+.play{ 
+    margin: 10px;
+    margin-top: 10px;
+    display: inline-block
+}
+main{ 
+    flex-grow: 1;
+    height: 100%;
+    background-color: #141922;
+   
+}
+
+/* sezione album */
+section{ 
+    width: 100%;
+}
+.album{ 
+    width:calc(100% / 6 - 20px);
+    background-color: aqua;
+    height: 100px;
+    margin-top: 80px;
+   
+}
+footer{ 
+    height: 80px;
+    background-color:#282828;
+}
