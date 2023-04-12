@@ -66,6 +66,7 @@ i{
     color: #a3a3a3;
     font-size: 2rem;
 }
+
 strong{ 
     margin: 10px;
 }
@@ -95,6 +96,8 @@ main{
     
 
 }
+/* barra navigazione centrale */
+
 
 h2 { 
     color: white;
@@ -194,8 +197,70 @@ a{
     margin-bottom: 15px;
     
 }
+/* footer */
 
 footer{ 
     height: 80px;
     background-color:#282828;
+   
+    
+    
+    
+}
+/* album player */
+
+
+.square{
+    display: flex;
+    align-items: center;
+    
+}
+ .photo{ 
+    width: 30%;
+    margin-top: 10px;
+ }   
+.photo img{ 
+    width: 100%;
+}
+.col-lg-2 strong{ 
+    color: white;
+}
+.sottotitolo.player{ 
+    margin-left: 10px;
+}
+
+.icon i{ 
+   margin: 0;
+
+}
+/* barra player */
+.linea{ 
+    height: 3px;
+    width: 100%;
+    background-color:#5a5a5a;
+    border-radius: 5%;
+}
+.linea .two{
+    background-color: #a3a3a3;
+    width: 20%;
+}
+
+/* barra player footer */
+.col-lg-4{ 
+    text-align: center;
+  
+    font-size: 1.1rem;
+}
+.fa-circle-play{ 
+    font-size: 1.4rem;
+}
+h5{ 
+    color: white;
+}
+
+
+/* regole debug footer */
+[class*="col-"] {
+    min-height: 80px;
+    
 }
