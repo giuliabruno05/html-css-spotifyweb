@@ -9,7 +9,7 @@ body{
     font-size: 0.7rem;
 }
 /* parte superiore */
-header{ 
+.row-superiore{ 
     height: 70px;
     background-color: rgba(0,0,0,0.8); 
     position: fixed;
@@ -17,6 +17,7 @@ header{
     top: 0;
     right: 0;
     z-index: 1000;
+    
     
     
     
@@ -29,6 +30,10 @@ header{
     background-color: #080b12;
     border-color: #c2c3c5;
     width: 15%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform:translate(0, -50%);
 
     
 }
@@ -73,20 +78,69 @@ main{
     flex-grow: 1;
     height: 100%;
     background-color: #141922;
+
    
 }
 
 /* sezione album */
-section{ 
-    width: 100%;
+.contenitore{ 
+    width: calc(100% - 200px);
+    padding-top: 80px;
+    overflow: auto;
+    
+
+}
+
+h2 { 
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+h3{ 
+    color: white;
+    margin: 5px 5px;
 }
 .album{ 
     width:calc(100% / 6 - 20px);
-    background-color: aqua;
-    height: 100px;
-    margin-top: 80px;
-   
+    margin: 10px;
+    text-align: center;
 }
+.album img{ 
+    width: 100%;
+}
+/* foto tonde */
+.album.circle img{ 
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.album.circle{ 
+  height:calc(((100vw - 200px) / 6 ) - 20px);
+}
+.sottotitolo{ 
+    color: #a3a3a3;
+    font-size: 0.65rem;
+    
+    
+}
+section > .sottotitolo{ 
+    margin-left: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+a{ 
+    text-decoration: none;
+    color: #a3a3a3;
+    margin: 10px;
+    
+}
+.navigazione{ 
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
 footer{ 
     height: 80px;
     background-color:#282828;
