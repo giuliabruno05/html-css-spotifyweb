@@ -212,27 +212,38 @@ h3{
     width:calc(100% / 6 - 20px);
     margin: 10px;
     text-align: center;
-    position: relative;
+    
+   
+   
 }
 .album img{ 
     width: 100%;
+
+  
+}
+.image{ 
+    position: relative;
 }
 /* hover album */
-.album:hover{ 
+.album:hover img{ 
     opacity: 0.4;
 }
 /* hover play album */
-.cd{ 
+.cd { 
+    
     position: absolute;
+    font-size: 2.3rem;
     top: 50%;
-    transform: translate(-90px, -65px);
+    left: 50%;
+    transform: translate(-60%, -60%);
     display: none;
-   
-    
-    
+}
+.image .fa-circle-play{ 
+    margin: 0;
 }
 .album:hover .cd{ 
     display:block;
+    color:white;
 }
 
 section > .sottotitolo{ 
@@ -386,35 +397,40 @@ footer .row{
     width: 100%;
     background-color:#5a5a5a;
     border-radius: 5%;
-    position: relative;
+   
     line-height:3px;
     vertical-align: middle;
+    max-width: 400px;
 }
 .linea .two{
     background-color: #a3a3a3;
     width: 20%;
     position: relative;
 }
+.progress-bar{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .number{ 
     color: white;
-    position: absolute;
-    left:-30px;
+    
 }
 .number.fine{ 
     color: white;
-    position: absolute;
-    left: 103%;
+  
 }
 /* barra player footer */
 
-.fa-circle-play{ 
+.animated{ 
     font-size: 1.4rem;
     transition: 0.5s all ease-in-out;
         
 }
 
 /* play in hover */
-.fa-circle-play:hover{ 
+.animated:hover{ 
     transform: scale(1.5);
 }
  .linea.volume{ 
@@ -449,6 +465,7 @@ footer .row{
     
 }
 
+
 /* versione tablet footer */
 @media screen and (max-width:768px) {
     .icon{ 
@@ -459,12 +476,13 @@ footer .row{
 
 /* versione sm */
 @media screen and (max-width:576px) {
-    .block{ 
+     .block{ 
         width: 30%;
         padding: 0;
         position: relative;
     }
-    .block.two{ 
+
+    /* .block.two{ 
         width: 40%;
     }
     .icon{ 
@@ -473,8 +491,8 @@ footer .row{
     .icon i{ 
         margin: 3px;
         
-    }
-    .linea{ 
+    } */ 
+    /* .linea{ 
         position:relative ;
         width: 70%;
         margin: 0 auto;
@@ -488,7 +506,7 @@ footer .row{
     .linea.two{ 
         position: absolute;
         left: 0;
-    }
+    } */
     .text-photo{ 
         margin-right: 0;
     }
