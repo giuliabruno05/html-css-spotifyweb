@@ -32,22 +32,23 @@
                 
                 
                 <ul class="list-item">
-                    <li>
+                    <li class="line white">
                         
-                        <i class="fa-solid fa-house"></i>
-                        Home
-                        
+                        <div class="home">
+                            <img src="img/home.svg" alt="icona home">
+                            Home
+                        </div>
                     </li>
                     <li>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass grey"></i>
                         Cerca
                     </li>
                     <li>
-                        <i class="fa-solid fa-lines-leaning"></i>
+                        <i class="fa-solid fa-lines-leaning grey"></i>
                         La tua libreria
                     </li>
                     <li>
-                        <strong>PLAYLIST</strong>
+                        <strong class="title">PLAYLIST</strong>
                     </li>
                     <li>
                         <i class="fa-solid fa-square-plus"></i>
@@ -78,6 +79,21 @@
                         Nome playlist
                     </li>
                 </ul>
+                <div class="bottom">
+                    <span class="app"> 
+                        <i class="fa-regular fa-circle-down grey"></i>
+                        Installa app
+                    </span>
+                    <br>
+                    <div class="user">
+                        <img src="img/profile.svg" alt="icone user">
+                        <span class="white"><strong>John Doe</strong></span>
+                    </div>
+                </div>
+                
+
+                    
+               
                 <!-- versione xs -->
                <div class="list">
                     <img class="logo-small" src="img/logo-small.svg" alt="logo">
@@ -101,7 +117,7 @@
             <div class="contenitore">
                 <section>
                     <div class="navigazione">
-                        <a href="#">IN EVIDENZA</a>
+                        <a href="#" class="green-line">IN EVIDENZA</a>
                         
                             
                         <a href="#">PODCAST</a>
@@ -188,60 +204,58 @@
     </main>
     <!-- footer -->
     <footer>
-        <div class="container">
-            
-                <div class="row">
+        <div class="row">
+            <div class="block">
+                <div class="photo">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="text-photo">
                     
-                        <div class="col-lg-2">
-                            <div class="square">
-                                <div class="photo">
-                                    <img src="img/sinister.jpeg" alt="foto player">
-                                 </div>   
-                               
-                                <div class="text-photo">
-                                    
-                                    <span>
-                                        <strong>Sinister</strong>
-                                    </span>
-                                    <br>
-                                    <span class="sottotitolo player">Brano nome</span>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-regular fa-folder"></i>
-                                </div>
-                            </div>
-                             
-                            
-                        </div>   
+                        <h5>Sinister</h5>
+                    
+                    <span class="sottotitolo player">
+                        Brano nome
+                    </span>
+            </div>
+                <div class="icon">
+                    
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+
+                </div>
+            </div>
+            <div class="block two">
+                
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                
+                
+                
+                <div class="linea">
+                    <div class="linea two"></div>
+                </div>
+            </div>
+            <div class="block tre">
+                
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                
+                <div class="linea volume"></div>
+            </div>
+            </div>
+        </div>
                     
                     
                         
                             
                    
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                        
-                        <div class="linea">
-                            <div class="linea two"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-2">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-tv"></i>
-                        <i class="fa-solid fa-volume-high"></i>
-                        <div class="linea"></div>
-                    </div>
-                </div>
-            
-            
-        </div>
+                    
     </footer>
 </body>
 </html>
