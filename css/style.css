@@ -479,10 +479,10 @@ footer .row{
      .block{ 
         width: 30%;
         padding: 0;
-        position: relative;
+        
     }
 
-    /* .block.two{ 
+    .block.two{ 
         width: 40%;
     }
     .icon{ 
@@ -491,12 +491,11 @@ footer .row{
     .icon i{ 
         margin: 3px;
         
-    } */ 
-    /* .linea{ 
-        position:relative ;
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 10px;
+    } 
+     .linea{ 
+       
+        max-width: 300px;
+        position: relative;
     }
 
     .linea.volume{ 
@@ -506,16 +505,37 @@ footer .row{
     .linea.two{ 
         position: absolute;
         left: 0;
-    } */
+    } 
     .text-photo{ 
         margin-right: 0;
     }
-    
+    .sottotitolo.player{ 
+        margin-left: 0;
+
+    }
+    .photo{ 
+        margin: 0 5px;
+        width: 30%;
+    } 
+    h5{ 
+        margin-left: 0;
+    }
+
    
 }
 /* versione xs */
 @media screen and (max-width:420px){ 
-    .icon{ 
-        width: 20;
+    
+    .linea{ 
+        max-width: 100px;
     }
+    .controls i{
+        margin: 5px;
+        margin-top: 20px;
+        
+    }
+    
+   
+    
+    
 }
